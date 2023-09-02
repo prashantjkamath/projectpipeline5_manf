@@ -20,7 +20,7 @@ node {
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Done by Jenkins Job changemanifest: ${env.BUILD_NUMBER}'"
-                        sh "git push ${gitUrl} HEAD:main"
+                        sh "git push ${gitUrl} main"
       }
     }
   }
